@@ -1,4 +1,4 @@
-# Barclays Credit Engine — Real-Time Developer Services Dashboard
+# Credit Engine — Real-Time Developer Services Dashboard
 
 A live, in-browser control panel that gives engineers a single place to **monitor a polyglot (Python + Java) credit-decisioning platform** and **launch the tools they need to work on it** — IDEs, cloud consoles, and data-layer diagnostics — without leaving the browser.
 
