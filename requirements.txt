@@ -1,0 +1,44 @@
+# ==============================================================================
+# CREDIT RISK & DECISION ENGINE - REQUIREMENTS MATRIX
+# System Target: Python 3.14.x | Package Manager: pip 26.x
+
+
+# ------------------------------------------------------------------------------
+# 1. APPLICATION CORE & ASYNC FRAMEWORK
+# ------------------------------------------------------------------------------
+fastapi>=0.111.0
+starlette>=1.3.1           # Core underlying ASGI toolkit & routing engine
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+pydantic-settings>=2.2.0
+httpx>=0.27.0
+jinja2>=3.1.4
+gunicorn
+
+# Frontend
+reactpy
+
+# ------------------------------------------------------------------------------
+# 4. PERSISTENCE, CACHING & EVENT STREAMING
+# ------------------------------------------------------------------------------
+asyncpg>=0.29.0            # High-performance async PostgreSQL driver
+sqlalchemy[asyncio]>=2.0.30
+alembic>=1.13.1            # Migration toolchain
+redis>=5.0.4               # Caching & Rate-limiting
+confluent-kafka>=2.4.0     # Event-driven streaming client
+
+# ------------------------------------------------------------------------------
+# 5. INTEGRATIONS & EXTERNAL APIS
+# ------------------------------------------------------------------------------
+plaid-python>=21.0.0
+boto3>=1.34.100            # AWS SDK for Textract OCR & S3 storage
+
+# ------------------------------------------------------------------------------
+# 6. INFRASTRUCTURE, AUDITING & OBSERVABILITY
+# ------------------------------------------------------------------------------
+hvac>=2.2.0                # HashiCorp Vault client
+prometheus-client>=0.20.0  # Real-time engine metrics
+opentelemetry-api>=1.24.0
+opentelemetry-sdk>=1.24.0
+opentelemetry-instrumentation-fastapi>=0.45b0
+structlog>=24.1.0          # Auditable JSON-formatted logs
